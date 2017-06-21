@@ -4,7 +4,7 @@
 {{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
 
 <div class="mw7 center">
-  <ul class="flex-ns flex-wrap mhn1-ns pa3">
+  <ul class="flex-ns flex-wrap mhn1-ns mv0 pa3">
       {{ range .Data.Pages }}
           <div class="w-50-ns ph1-ns flex">
             {{ .Render "li"}}

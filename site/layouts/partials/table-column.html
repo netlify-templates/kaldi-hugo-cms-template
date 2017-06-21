@@ -1,10 +1,10 @@
 <div class="ph2">
 
 	<!-- Title -->
-	<h3 class="b f5 grey-3 tc lh-title mb3">{{.plan}}</h3>
+	<h3 class="b f5 grey-3 tc lh-title mt0 mb3">{{.plan}}</h3>
 
 	<!-- Price -->
-	<p class="primary f1 b tc lh-title center">
+	<p class="primary f1 b tc lh-title mt0 center">
 		<span class="f4">$</span>{{.price}}
 	</p>
 
@@ -12,11 +12,11 @@
 	<p class="b">{{.description}}</p>
 
 	<!-- Features -->
-	<ul>
+	<ul class="list pl0">
 		{{ $itemCount := len .items }}
 		{{ range $index, $item := .items }}
 		<li>
-			<p class="{{ if ne (add 1 $index) $itemCount }}pb2 mb2 divider-grey{{ end }}">{{ $item }}</p>
+			<p class="mt0 {{ if ne (add 1 $index) $itemCount }}mb2 pb2 divider-grey{{ end }}">{{ $item }}</p>
 		</li>
 		{{ end }}
 	</ul>

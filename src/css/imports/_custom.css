@@ -1,0 +1,9 @@
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
