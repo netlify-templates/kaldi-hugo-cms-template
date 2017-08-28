@@ -24,8 +24,6 @@
  */
 
 
-/* External Library Includes */
-@import './imports/_normalize';
 
 /* Modules */
 @import './imports/_box-sizing';
